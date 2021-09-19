@@ -5,27 +5,40 @@ using UnityEngine;
 public class TowerPlacement : MonoBehaviour
 {
     private Tower _placedTower;
-    private LevelManager lv;
+    int jumlahtower;
+
     private void Start()
     {
-        lv = GetComponent<LevelManager>();
     }
+    private void Update()
+    {
+        print(jumlahtower.ToString());
 
+    }
     // Fungsi yang terpanggil sekali ketika ada object Rigidbody yang menyentuh area collider
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (_placedTower != null)
+        if (collision.transform.tag=="Tower")
         {
-            return;
+            if (jumlahtower<=3)//agar tower hanya bisa di stack sebanyak 3 tumpukan
+            {
+                if (_placedTower != null)
+                {
+                    return;
+                }
+                Tower tower = collision.GetComponent<Tower>();
+                if (tower != null)
+                {
+                    tower.SetPlacePosition(transform.position);
+                    _placedTower = tower;
+
+                    jumlahtower++;
+                }
+            }
+           
         }
-        Tower tower = collision.GetComponent<Tower>();
-        if (tower != null)
-        {
-            tower.SetPlacePosition(transform.position);
-            _placedTower = tower;
-        }
-        
-       
+
+
     }
 
     // Kebalikan dari OnTriggerEnter2D, fungsi ini terpanggil sekali ketika object tersebut meninggalkan area collider
