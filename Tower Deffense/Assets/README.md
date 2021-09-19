@@ -5,5 +5,7 @@
 - audio latar belakang
 - adio selesai permainan(menang/kalah)
 
-# Deri Kurniawan
-# 8020190351
+# nama 
+Deri Kurniawan
+
+8020190351
