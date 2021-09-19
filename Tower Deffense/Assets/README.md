@@ -4,6 +4,8 @@
 - screen game resume
 - audio latar belakang
 - adio selesai permainan(menang/kalah)
+#perbaiikan feature
+- membuat stack pada tower hanya dapat menampung 3 tower
 
 # Deri Kurniawan
 # 8020190351
