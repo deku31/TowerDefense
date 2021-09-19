@@ -4,7 +4,7 @@
 - screen game resume
 - audio latar belakang
 - adio selesai permainan(menang/kalah)
-# perbaiikan feature
+# modifikasi feature
 - membuat stack pada tower hanya dapat menampung 3 tower
 
 # nama 
