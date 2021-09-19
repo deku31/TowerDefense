@@ -7,5 +7,7 @@
 #perbaiikan feature
 - membuat stack pada tower hanya dapat menampung 3 tower
 
-# Deri Kurniawan
-# 8020190351
+# nama 
+Deri Kurniawan
+
+8020190351
